@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Mail, Github, Linkedin, ArrowRight, ExternalLink, Menu, X, ChevronRight, Briefcase, Send, Phone, Globe, Instagram, Laptop, FileDown } from 'lucide-react';
+import profileImage from './assets/profile.png';
 
 // --- Styled Components / Assets ---
 
@@ -245,7 +246,7 @@ export default function App() {
                 <div className="relative group">
                   <div className="w-full aspect-[4/5] overflow-hidden border-[12px] border-white shadow-2xl rotate-3 transition-transform group-hover:rotate-0 duration-500 bg-gray-200">
                     <img
-                      src="/profile.png"
+                      src={profileImage}
                       alt="Shriyansh Tiwari"
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
                       onError={(e) => {
