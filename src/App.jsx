@@ -425,7 +425,7 @@ export default function App() {
 
                   <div className="max-w-2xl mx-auto space-y-6">
                     <p className="text-base sm:text-lg md:text-2xl font-light leading-relaxed">
-                      Hi, I'm <span className="font-bold">Shriyansh Tiwari</span>, a passionate <span className="text-green-600 font-bold">UI/UX Designer</span> from Lucknow. I create user-friendly digital experiences that blend creativity and functionality.
+                      Hi, I'm <span className="font-bold">Shriyansh Tiwari</span>, a passionate <span className="text-green-600 font-bold">UI/UX Designer</span>. I create user-friendly digital experiences that blend creativity and functionality.
                     </p>
 
                     <div className="pt-8">
