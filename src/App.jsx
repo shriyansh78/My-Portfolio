@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Mail, Github, Linkedin, ArrowRight, ExternalLink, Menu, X, ChevronRight, Briefcase, Send, Phone, Globe, Instagram, Laptop, FileDown } from 'lucide-react';
-import profileImage from './assets/profile.png';
 
 // --- Styled Components / Assets ---
+
+const profileImage = `${import.meta.env.BASE_URL}profile.png`;
 
 // Custom Behance Icon since it's not in Lucide
 const BehanceIcon = ({ className = "w-5 h-5" }) => (
