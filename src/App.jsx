@@ -145,6 +145,7 @@ export default function App() {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About Me' },
     { id: 'projects', label: 'Projects' },
+    { id: 'case-study', label: 'Case Study' },
     { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
     { id: 'contact', label: 'Contact' }
@@ -431,7 +432,7 @@ export default function App() {
 
                     <div className="pt-8">
                       <a
-                        href="https://drive.google.com/file/d/1XNPJBlyOgQRyru3Xatw-M65AiY2d1meP/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1NU5YjMTnLquhy3P_pCWygwXU3U_xANuD/view?usp=sharing"
                         className="inline-flex items-center gap-3 border-2 border-green-500 bg-white px-5 sm:px-8 py-3 sm:py-4 text-[11px] sm:text-sm font-black uppercase tracking-[0.12em] sm:tracking-[0.2em] hover:bg-green-500 hover:text-white transition-all duration-300 rounded-sm group shadow-lg"
                       >
                         DOWNLOAD RESUME <FileDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
@@ -571,6 +572,90 @@ export default function App() {
                     </button>
                   </form>
                 </div>
+              </div>
+            </div>
+          </div>
+        );
+
+      case 'case-study':
+        const arogyamitraImage = `${import.meta.env.BASE_URL}Arogyamitra.png`;
+
+        return (
+          <div className="max-w-4xl mx-auto py-8 p-4 sm:p-6 md:p-16">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 mb-10 sm:mb-14">
+              <div className="relative">
+                <h2 className="text-4xl sm:text-5xl font-black uppercase">CASE</h2>
+                <Doodle type="circle" className="scale-x-150 -translate-y-2" />
+              </div>
+              <span className="text-2xl sm:text-3xl italic font-serif" style={{ fontFamily: "'Dancing Script', cursive" }}>Study</span>
+            </div>
+
+            {/* ArogyaMitra Case Study */}
+            <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
+
+              {/* Left — Clickable Image */}
+              <div className="w-full md:w-2/5 flex-shrink-0">
+                <a
+                  href="https://www.figma.com/proto/cp3TU9E646uoSafQVwdEH4/My-Project?node-id=2230-3&t=mafj0b2XMs9UI0Av-1&scaling=scale-down-width&content-scaling=fixed&page-id=2110%3A2"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group block relative"
+                >
+                  <div className="relative overflow-hidden border-[10px] border-white shadow-2xl rotate-1 group-hover:rotate-0 transition-transform duration-500">
+                    <img
+                      src={arogyamitraImage}
+                      alt="ArogyaMitra Case Study"
+                      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                      <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-black text-xs font-black uppercase tracking-widest px-4 py-2 flex items-center gap-2">
+                        View Prototype <ExternalLink className="w-3 h-3" />
+                      </span>
+                    </div>
+                  </div>
+                  <div className="absolute bottom-[-8px] right-[-8px] bg-amber-500 text-white px-3 py-1 font-mono text-[9px] uppercase tracking-tight rotate-12 shadow-md">
+                    UI UX DESIGN
+                  </div>
+                </a>
+              </div>
+
+              {/* Right — Text */}
+              <div className="w-full md:w-3/5 space-y-5">
+                <div>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-amber-600 bg-amber-100 px-2 py-0.5 rounded-sm">
+                    HEALTHCARE · UI/UX DESIGN
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-2 leading-tight">
+                    ArogyaMitra
+                  </h3>
+                  <p className="text-sm italic text-gray-500 font-serif" style={{ fontFamily: "'Dancing Script', cursive" }}>
+                    Your Digital Healthcare Companion
+                  </p>
+                </div>
+
+                <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
+                  <p>
+                    ArogyaMitra is an innovative digital healthcare platform designed to simplify and improve the way people access medical services. The platform brings together essential healthcare features such as doctor consultations, appointment booking, diagnostic test scheduling, medicine ordering, and digital health record management into one seamless experience. Its mission is to make quality healthcare accessible, affordable, and convenient for everyone, regardless of their location.
+                  </p>
+                  <p>
+                    The platform enables users to search for healthcare professionals across various specialties, book appointments instantly, and consult doctors online from the comfort of their homes. This reduces waiting times and eliminates the need for unnecessary hospital visits, making healthcare more efficient and patient-friendly. ArogyaMitra also integrates diagnostic services, allowing users to schedule lab tests, receive reports digitally, and maintain their medical records securely in one place.
+                  </p>
+                  <p>
+                    In addition, the platform offers medicine delivery services, ensuring that prescribed medications are available to users quickly and conveniently. The user interface is designed with simplicity and accessibility in mind, making it easy for individuals of all age groups to navigate and manage their healthcare needs effortlessly.
+                  </p>
+                  <p>
+                    By combining technology with healthcare, ArogyaMitra creates a connected ecosystem that empowers patients to take control of their health while enabling healthcare providers to deliver better services. It represents a modern approach to healthcare, focused on convenience, reliability, and improving the overall patient experience through digital innovation.
+                  </p>
+                </div>
+
+                <a
+                  href="https://www.figma.com/proto/cp3TU9E646uoSafQVwdEH4/My-Project?node-id=2230-3&t=mafj0b2XMs9UI0Av-1&scaling=scale-down-width&content-scaling=fixed&page-id=2110%3A2"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest border-b-2 border-black hover:text-amber-600 hover:border-amber-600 transition-colors pb-0.5"
+                >
+                  View Full Prototype <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
             </div>
           </div>
